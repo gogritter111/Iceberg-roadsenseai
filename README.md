@@ -313,6 +313,26 @@ An **AI-powered, serverless monitoring system** that:
 - **AWS Translate Usage**: 600 chars / 2M free tier limit (0.03%)
 - **Signals Translated**: 22% (6 out of 27 signals)
 
+### **AI Agent Performance**
+- **Classification Agent (Nova Micro)**: 300ms avg, 0% error rate
+- **Intent Analysis**: 350ms avg, 33% problem detection
+- **Embedding (Titan V2)**: 150ms per signal, 1024 dimensions
+- **Explanation Agent (Nova Lite)**: 280 char avg explanations
+- **Average Confidence Score**: 68%
+
+### **Lambda Resource Utilization**
+| Function | Memory Allocated | Memory Used | Efficiency |
+|----------|------------------|-------------|------------|
+| roadsense-scraper | 512 MB | 110 MB | 21% |
+| ingest-roadsense | 128 MB | 98 MB | 77% |
+| roadsense-inference | 128 MB | 97 MB | 76% |
+
+### **Data Source Coverage**
+- **RSS Feeds Active**: 7/8 (87.5%)
+- **Weather API**: Bangalore only, 24 calls/day
+- **Geocoding**: 35+ Bangalore locations mapped
+- **Map API Cost**: $0 (hardcoded coordinates)
+
 ### **Cost Breakdown** (Monthly)
 - EC2 (t3.small): $15
 - Lambda Invocations: $2-5
