@@ -208,7 +208,7 @@ def scrape_city(city: dict) -> list[dict]:
 
 def scrape_all_cities() -> list[dict]:
     global OPENWEATHER_API_KEY
-    OPENWEATHER_API_KEY = os.environ.get("OPENWEATHER_API_KEY") or "82383fe6d9e4ce8bf445bd4d81497e1f"
+    OPENWEATHER_API_KEY = os.environ.get("OPENWEATHER_API_KEY")
 
     if not OPENWEATHER_API_KEY:
         logger.error("[Weather] OPENWEATHER_API_KEY not set — cannot run scraper")
